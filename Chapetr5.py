@@ -8,13 +8,13 @@ def userinput():
     avg = 0
     while (inp != 'done'):
         try:
-            inp = raw_input("`enter the number\n")
+            inp = raw_input("Enter the number\n")
             if(inp != "done"):
                 inp = int(inp)
                 total = total + inp
                 count = count + 1
         except:
-            print("`invalid Entry\n")
+            print("Invalid Entry\n")
     avg = float(total) / count
 
     print(total, count, avg)
